@@ -8,8 +8,8 @@ cors_proxy.createServer({
   originWhitelist: [],
   requireHeader: [],
   removeHeaders: [
-    'cookie',
-    'cookie2',
+    //'cookie',
+    //'cookie2',
     // Strip Heroku-specific headers
     'x-request-start',
     'x-request-id',
