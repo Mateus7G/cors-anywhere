@@ -6,7 +6,7 @@ var port = process.env.PORT || 8080;
 var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
   originWhitelist: [],
-  requireHeader: ['origin', 'x-requested-with'],
+  requireHeader: [],
   removeHeaders: [
     'cookie',
     'cookie2',
